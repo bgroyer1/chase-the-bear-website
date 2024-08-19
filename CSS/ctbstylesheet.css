@@ -6,9 +6,9 @@ body {
 }
 
 nav {
-    background-color: #180d13;
     display: flex;
     justify-content: space-between;
+    background-color: #180d13;
     position: sticky;
     padding: 1em;
     top: 0;
@@ -19,13 +19,9 @@ nav {
     width: 30%;
 }
 
-.nav-logo {
-    width: 30%;
-}
-
 .nav-icon {
     color: white;
-    margin-right: 0.5em;
+    margin-right: 5px;
 }
 
 .background-video {
