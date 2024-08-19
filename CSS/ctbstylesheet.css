@@ -1,10 +1,11 @@
 /* * {
     box-sizing: border-box;
-} */
+    } */
 
 body {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #180d13;
 }
 
@@ -66,7 +67,7 @@ nav {
     margin-left: 0.5em;
     text-decoration: none;
     color: whitesmoke;
-    font-size: 1.25rem;
+    font-size: 1.325rem;
     text-transform: uppercase;
 }
 
@@ -81,19 +82,14 @@ nav {
     left: 50%;
     bottom: 0;
     width: 0;
-    height: 0.5px; /* Adjust the height of the border as needed */
-    background-color: red; /* Change to the color of the border */
-    transition: width 0.3s ease, left 0.3s ease; /* Smooth transition for the width and position */
+    height: 0.5px; 
+    background-color: #c20037; 
+    transition: width 0.3s ease, left 0.3s ease;
 }
 
 .nav-link:hover::before {
     width: 100%;
     left: 0;
-}
-
-.header-img-div {
-    position: relative;
-    width: 100%;
 }
 
 header {
@@ -102,12 +98,23 @@ header {
     overflow: hidden;
 }
 
+.header-img-div {
+    position: relative;
+    width: 100%;
+}
+
+.header-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45%;
+}
+
 .grid-container {
     display: grid;
-    justify-content: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 5em;
-    padding: 1em;
+    grid-template-columns: 1fr;
+
 }
 
 .music {
@@ -120,12 +127,21 @@ header {
     grid-column: span 2;
 }
 
-.header-img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 45%;
+.bio {
+    text-align: center;
+    margin: 1em;
+}
+
+.bio p {
+    margin-top: 0;
+}
+
+.shows {
+    text-align: center;
+}
+
+.booking {
+    text-align: center;
 }
 
 footer {
@@ -140,9 +156,29 @@ footer {
     justify-content: center;
 }
 
-.footer-text {
+.text {
     display: block;
     margin-top: 2em;
+    font-size: 1.25rem;
+    line-height: 1.5;
     text-align: center;
     color: whitesmoke;
+}
+
+#booking-text {
+    border-bottom: 2px solid #c20037;
+    font-size: 2rem;
+}
+
+@media (min-width:900px) {
+    .grid-container {
+        display: grid;
+        max-width: 1200px;
+        margin: 0 auto;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2em;
+        justify-content: center;
+        padding: 1em;
+    }
 }
