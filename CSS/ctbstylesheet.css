@@ -1,12 +1,12 @@
-/* * {
+* {
     box-sizing: border-box;
-    } */
+    }
 
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #180d13;
+    background-color: #03071e;
 }
 
 h1 {
@@ -46,14 +46,6 @@ nav {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-}
-
-.hidden {
-    display: none;
-}
-
-.visible {
-    display: block;
 }
 
 .nav-list {
@@ -114,34 +106,53 @@ header {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
-
 }
 
 .music {
     margin-left: 2em;
-    text-align: center;
 }
 
 .music-videos {
-    text-align: center;
     grid-column: span 2;
 }
 
-.bio {
+.shows, .booking, .bio, .music-videos, .music, .quote-div, .text {
     text-align: center;
-    margin: 1em;
 }
+
+.bio {
+    margin: 0 3em;
+}
+
+.quote-div {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.125rem;
+    margin: 2em 3em 0;
+    padding: 2em 2em;
+    border-bottom: 3px solid #c20037;
+    color: whitesmoke;
+    border-radius: 5px;
+    min-height: 200px;
+}
+
+.quote-text {
+    opacity: 0;
+    font-size: 1.5rem;
+    color: white;
+    transition: opacity 2s ease-in-out; /* Matches the 1s delay in JS */
+}
+
+.quote-text.visible {
+    opacity: 1;
+}
+
 
 .bio p {
     margin-top: 0;
 }
 
 .shows {
-    text-align: center;
-}
-
-.booking {
-    text-align: center;
+    margin-top: 3em;
 }
 
 footer {
@@ -161,24 +172,24 @@ footer {
     margin-top: 2em;
     font-size: 1.25rem;
     line-height: 1.5;
-    text-align: center;
     color: whitesmoke;
 }
 
 #booking-text {
-    border-bottom: 2px solid #c20037;
+    border-bottom: 3px solid #c20037;
     font-size: 2rem;
+    line-height: 1.5;
+    padding: 0.125em;
 }
 
 @media (min-width:900px) {
     .grid-container {
-        display: grid;
         max-width: 1200px;
-        margin: 0 auto;
-        justify-content: center;
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 2em;
         justify-content: center;
+        gap: 2em;
         padding: 1em;
+        margin: 0 auto;
     }
 }
