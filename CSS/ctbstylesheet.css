@@ -1,102 +1,80 @@
 body {
-    background-color: #121212;
-    color: whitesmoke;
-    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-h1 {
-    font-size: 2rem;
-    border-bottom: 2px solid red;
-}
-
-.header-img {
-    width: 45%;
-}
-
-.nav-link {
-    color: white;
-    text-decoration: none;
-    padding: 0.125em;
-    margin: 0.3125em;
-    font-size: 1.5rem;
-    width: 45%;
-    border-bottom: 1px solid white;
-}
-
-a:hover {
-    color: red;
-    border-color: red;
-}
-
 nav {
+    background-color: #180d13;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    position: sticky;
+    padding: 1em;
+    top: 0;
+    margin-bottom: 0;
+}
+
+.nav-img {
+    width: 30%;
+}
+
+.nav-logo {
+    width: 30%;
+}
+
+.nav-icon {
+    color: white;
+    margin-right: 0.5em;
+}
+
+.background-video {
+    width: 100svw;
+    height: 100svh;
+    object-fit: cover;
+}
+
+
+.nav-list {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.nav-link-div {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.music-btns {
-    margin-top: 1.5em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-
-.a-btn {
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 1.2rem;
+.nav-link {
+    font-weight: bold;
+    margin-right: 1em;
     text-decoration: none;
-    color: white;
-    background-color: red;
-    border-radius: 0.25rem;
-    display: block;
-    width: 80svh;
-    border: none;
-    padding: 0.625em;
+    color: whitesmoke;
+    font-size: 1.5rem;
 }
 
-.a-btn:hover {
-    color: red;
-    background-color: white;
+.nav-link:hover {
+    color: black;
 }
 
-@media (min-width: 700px) {
-    nav {
-        display: inline;
-    }
+.header-img-div {
+    position: relative;
+    width: 100%;
 
-    .music-btns {
-        display: inline;
-        margin-top: 1em;
-    }
+}
 
-    .a-btn:first-child {
-        display: inline-block;
-        margin-top: 1.5em;
-        margin-right: 0.625em;
-    }
+header {
+    margin-top: 0;
+}
 
-    .a-btn {
-        display: inline-block;
-        margin-top: 0.75em;
-    }
-
-    h1 {
-        display: inline-block;
-    }
-
-    .music-and-videos {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .videos-embed {
-        grid-column: 2;
-    }
-
-
+.header-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45%;
 }

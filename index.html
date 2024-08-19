@@ -1,44 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Chase The Bear</title>
-		<link rel="stylesheet" href="/css/ctbstylesheet.css" />
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--TITLE-->
+        <title>Chase The Bear</title>
+        <!--STYLESHEETS-->
+		<link rel="stylesheet" href="/css/ctbstylesheet.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	</head>
 	<body>
-		<header>
+        <nav>
+            <ul class="nav-list">
+                <div class="nav-link-div">                        
+                    <li><a class="nav-link" href="#">Shows</a></li>
+                    <li><a class="nav-link" href="#">Bio</a></li>
+                    <li><a class="nav-link" href="#">Booking</a></li>
+                    <li><a class="nav-link" href="#">Socials</a></li>
+                </div>
+             
+            </ul>
+            <div class="nav-logo-div">
+                <img class="nav-logo" src="IMG/CHASE THE BEAR LOGO _ 2022 _ WHITE-01.png" alt="">
+            </div>
+            <div class="nav-link-social-div">
+                <i class="nav-icon fa-2xl fa-brands fa-spotify"><a href="#"></a></i>
+                <i class="nav-icon fa-2xl fa-brands fa-instagram"><a href="#"></a></i>
+                <i class="nav-icon fa-2xl fab fa-itunes"><a href="#"></a></i>
+                <i class="nav-icon fa-2xl fa-brands fa-tiktok"><a href="#"></a></i>
+                <i class="nav-icon fa-2xl fa-brands fa-facebook"><a href="#"></a></i>
+                <i class="nav-icon fa-2xl fa-brands fa-twitter"><a href="#"></a></i>
+                <i class="nav-icon fa-2xl fa-brands fa-amazon"><a href="#"></a></i>
+            </div>
+         </nav>
+        <header>
             <div class="header-img-div">
-                <img class="header-img" src="img/CHASE THE BEAR LOGO _ 2022 _ WHITE-01.png" />
+                <img class="header-img" src="IMG/CTB - logo.png" />
+                <video id="background-video" autoplay loop mute>
+                    <source src="video/Chase The Bear - Left Town (Official Music Video).mp4" type="video/mp4">
+                </video>
             </div>
-			<div class="nav-bar">
-                <nav>
-                    <a class="nav-link" href="#">Music/Videos</a>
-                    <a class="nav-link" href="#">Shows</a>
-                    <a class="nav-link" href="#">Bio</a>
-                    <a class="nav-link" href="#">Booking</a>
-                    <a class="nav-link" href="#">Socials</a>
-                </nav>
-            </div>
+
 		</header>
         <main>
-            <section class="music">
+            <section>
+                <div class="grid-container white">
+                    <div class="spotify-embed">
+                        <h1>MUSIC</h1>
+                        <p>text</p>
+                    </div>
+                    <div class="videos-embed">
+                        <h1>FEATURED VIDEOS</h1>
+                        <p>text</p>
+                    </div>
+                </div>
                 <div class="music-btns">
                     <a class="a-btn" href="#" target="_blank">Listen on Spotify</a>
                     <a class="a-btn" href="#" target="_blank">Vinyl and Digital Download</a>
                 </div>
-                <div class="music-and-videos">
-                    <div class="spotify-embed">
-                        <h1>MUSIC</h1>
-                    </div>
-                    <div class="videos-embed">
-                        <h1>FEATURED VIDEOS</h1>
-                    </div>
-                </div>
-             
+            </section>
+                
 
             </section>
         </main>
+        <footer>
+        </footer>
 		<script src="index.js"></script>
 	</body>
 </html>
