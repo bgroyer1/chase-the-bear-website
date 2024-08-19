@@ -1,12 +1,18 @@
-* {
+/* * {
     box-sizing: border-box;
-}
+} */
 
 body {
     margin: 0;
     padding: 0;
-    background-color: black;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #180d13;
+}
+
+h1 {
+    display: inline-block;
+    font-size: 2rem;
+    color: whitesmoke;
+    border-bottom: 2px solid #c20037;
 }
 
 nav {
@@ -15,20 +21,24 @@ nav {
     align-items: center;
     background-color: #180d13;
     position: sticky;
-    padding: 1em;
     top: 0;
-    margin-bottom: 0;
+    margin: 0;
     z-index: 2;
 }
 
 .nav-img {
-    width: 10%;
-
+    width: 28%;
+    display: block;
+    margin: 0 auto;
 }
 
 .nav-icon {
     color: white;
     margin-right: 0.5em;
+}
+
+.nav-icon:hover {
+    color: #c20037
 }
 
 .background-video {
@@ -46,40 +56,68 @@ nav {
 }
 
 .nav-list {
-    margin-top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    margin: 0;
     list-style-type: none;
-}
-
-.nav-link-div {
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .nav-link {
-    font-weight: bold;
-    margin-right: 0.5em;
+    position: relative;
+    margin-left: 0.5em;
     text-decoration: none;
     color: whitesmoke;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    text-transform: uppercase;
 }
 
 .nav-link:hover {
-    color: red;
+    color: #c20037;
+    border-bottom: 1px solid #c20037;
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 0.5px; /* Adjust the height of the border as needed */
+    background-color: red; /* Change to the color of the border */
+    transition: width 0.3s ease, left 0.3s ease; /* Smooth transition for the width and position */
+}
+
+.nav-link:hover::before {
+    width: 100%;
+    left: 0;
 }
 
 .header-img-div {
     position: relative;
     width: 100%;
-
 }
 
 header {
     margin-top: 0;
+    margin-bottom: 3rem;
     overflow: hidden;
+}
+
+.grid-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5em;
+    padding: 1em;
+}
+
+.music {
+    margin-left: 2em;
+    text-align: center;
+}
+
+.music-videos {
+    text-align: center;
+    grid-column: span 2;
 }
 
 .header-img {
@@ -91,6 +129,20 @@ header {
 }
 
 footer {
+    margin-top: 3em;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-socials {
     display: flex;
     justify-content: center;
+}
+
+.footer-text {
+    display: block;
+    margin-top: 2em;
+    text-align: center;
+    color: whitesmoke;
 }

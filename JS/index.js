@@ -1,13 +1,12 @@
-document.addEventListener("scroll", () => {
-    const logo = document.querySelector("#nav-img")
-    const scrollPosition = window.scrollY;
-    const triggerPoint = 10;
+document.addEventListener("DOMContentLoaded", () => {
+    const navIMG = document.querySelector("#nav-img")
 
-    if (scrollPosition > triggerPoint) {
-        logo.classList.remove("hidden")
-        logo.classList.add("visible")
-    } else {
-        logo.classList.remove("visible")
-        logo.classList.add("hidden")
+    if (navIMG) {
+        navIMG.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behaviour: smooth
+            })
+        })
     }
 })
