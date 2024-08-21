@@ -31,7 +31,7 @@ window.onload = () => {
     quoteText.classList.add('visible');  // Show the first quote
 
     // Change quotes every 5 seconds
-    setInterval(showNextQuote, 9000); 
+    setInterval(showNextQuote, 8000); 
 };
 
 
