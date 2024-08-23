@@ -40,7 +40,7 @@ nav {
     background-color: #180d13;
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 1;
 }
 
 .nav-img {
@@ -53,6 +53,7 @@ nav {
 .nav-icon {
     color: white;
     margin-right: 0.5em;
+    font-size: 2rem;
 }
 
 .nav-icon:hover {
@@ -64,7 +65,7 @@ nav {
 }
 
 .nav-list {
-    padding: 0 0 0 0.5em;
+    
     list-style-type: none;
     display: none;
     position: relative;
@@ -123,6 +124,7 @@ header {
     object-fit: cover;
     width: 100%;
     height: auto;
+    z-index: -1;
 }
 
 .header-img {
@@ -131,7 +133,6 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 75%;
-    z-index: 1;
 }
 
 
@@ -194,8 +195,7 @@ header {
     color: whitesmoke;
     border-radius: 5px;
     min-height: 11em;
-    margin: 2em 3em 0;
-    padding: 0 2em 2em 2em;
+    padding-bottom: 2em;
 }
 
 .quote-text {
@@ -258,15 +258,9 @@ footer {
     }
 }
 
-@media {
-    .header-img {
-        width: 
-    }
-}
-
-@media {
-    .header-img {
-        width: 
+@media (min-width: 769px) and (max-width: 999px) {
+    .nav-link, .nav-icon {
+        font-size: 1.5rem;
     }
 }
 
@@ -280,12 +274,12 @@ footer {
         width: 25%;
     }
 
-    .nav-list {
+    .nav-list, .nav-socials-div {
         display: flex;
     }
 
-    .nav-socials-div {
-        display: flex;
+    .nav-list {
+        padding: 0 0 0 0.5em;
     }
 
     .text {
