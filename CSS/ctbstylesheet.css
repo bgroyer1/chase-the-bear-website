@@ -28,7 +28,7 @@ nav {
 }
 
 .nav-img {
-    width: 28%;
+    width: 45%;
     display: block;
     margin: 0 auto;
 }
@@ -51,7 +51,11 @@ nav {
 .nav-list {
     margin: 0;
     list-style-type: none;
-    display: flex;
+    display: none;
+}
+
+.nav-socials-div {
+    display: none;
 }
 
 .nav-link {
@@ -107,14 +111,28 @@ header {
     text-align: center;
 }
 
+.grid-container, .bio, .booking, .shows, nav, header {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
 }
 
-.music {
-    margin-left: 2em;
+.spotify-embed {
+    width: 83%;
 }
+
+#off-balance-embed {
+    height: 400px;
+}
+
+#honey-embed {
+
+}
+
 
 .music-videos {
     grid-column: span 2;
@@ -130,10 +148,6 @@ header {
 
 .lite-youtube {
     width: 350px;
-}
-
-.bio {
-    margin: 0 3em;
 }
 
 .quote-div {
@@ -189,13 +203,44 @@ footer {
 
 #booking-text {
     border-bottom: 3px solid #c20037;
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 1.5;
     padding: 0.125em;
 }
 
-@media (min-width:900px) {
-    .grid-container {
+@media (min-width:769px) {
+
+    #off-balance-embed {
+        height: 350px;
+    }
+
+    /* .spotify-embed-div {
+
+    } */
+
+    .nav-img {
+        width: 30%;
+    }
+
+    .nav-list {
+        display: flex;
+    }
+
+    .nav-socials-div {
+        display: flex;
+    }
+
+    .music {
+        margin-left: 2em;
+    }
+
+    #booking-text {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 900px)   {
+    grid-container {
         max-width: 1200px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
