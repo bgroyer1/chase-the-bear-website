@@ -60,7 +60,7 @@ nav {
     display: block;
 }
 
-.nav-icon:hover, .nav-icon:active {
+.nav-icon:hover {
     color: #c20037
 }
 
@@ -88,7 +88,7 @@ nav {
     text-transform: uppercase;
 }
 
-.nav-link:hover, .nav-link:active {
+.nav-link:hover {
     color: #c20037;
     border-bottom: 1px solid #c20037;
 }
