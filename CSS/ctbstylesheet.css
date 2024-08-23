@@ -31,13 +31,20 @@ nav {
     align-items: center;
     background-color: #180d13;
     position: sticky;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.nav-div {
+    width: 100%;
+    background-color: #180d13;
+    position: sticky;
     top: 0;
-    margin: 0;
     z-index: 2;
 }
 
 .nav-img {
-    width: 45%;
+    width: 25%;
     display: block;
     margin: 0 auto;
 }
@@ -270,7 +277,7 @@ footer {
     }
 
     .nav-img {
-        width: 22%;
+        width: 25%;
     }
 
     .nav-list {
