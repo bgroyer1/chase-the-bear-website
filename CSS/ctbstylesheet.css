@@ -37,6 +37,7 @@ nav {
 
 .nav-div {
     width: 100%;
+    margin: 0;
     background-color: #180d13;
     position: sticky;
     top: 0;
@@ -52,8 +53,11 @@ nav {
 
 .nav-icon {
     color: white;
-    margin-right: 0.5em;
     font-size: 2rem;
+}
+
+.nav-icon-link {
+    display: block;
 }
 
 .nav-icon:hover {
@@ -62,13 +66,15 @@ nav {
 
 .nav-socials-div {
     display: none;
+    gap: 1em;
 }
 
 .nav-list {
-    
     list-style-type: none;
     display: none;
     position: relative;
+    padding: 0;
+    margin: 0;
 }
 
 .nav-link {
@@ -238,6 +244,7 @@ footer {
     display: flex;
     justify-content: center;
     margin-bottom: 2em;
+    gap: 1em;
 }
 
 .text {
