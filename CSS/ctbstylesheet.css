@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Helvetica, sans-serif;
-    background-color: #03071e;
+    background-color: #180d13;
 }
 
 h1 {
@@ -130,7 +130,7 @@ header {
     display: grid;
     grid-template-columns: 1fr;
     border-bottom: 3px solid #c20037;
-    
+    padding-bottom: 3em;
 }
 
 .spotify-embed-div {
@@ -144,7 +144,7 @@ header {
 
 .music-videos {
     grid-column: span 2;
-    padding-bottom: 4em;
+    padding-bottom: m;
 }
 
 .lite-youtube-div {
@@ -159,6 +159,10 @@ header {
     width: 350px;
 }
 
+.bio {
+    border-bottom: 3px solid #c20037;
+}
+
 .bio p {
     margin-top: 0;
 }
@@ -169,10 +173,11 @@ header {
     align-items: center;
     justify-content: center;
     margin-top: 2em;
-    border-bottom: 3px solid #c20037;
     color: whitesmoke;
     border-radius: 5px;
     min-height: 11em;
+    margin: 2em 3em 0;
+    padding: 0 2em 2em 2em;
 }
 
 .quote-text {
@@ -189,13 +194,12 @@ header {
 .booking {
     display: flex;
     justify-content: center;
+    padding-bottom: 1em;
     border-bottom: 3px solid #c20037;
 }
 
 .booking-text {
     font-size: 1.4rem;
-    line-height: 1.5;
-    padding: 0.125em;
     line-height: 1.5;
     color: whitesmoke;
 }
@@ -203,7 +207,7 @@ header {
 footer {
     display: flex;
     flex-direction: column;
-    margin-top: 5em;
+    margin-top: 4em;
     margin-bottom: 1.5em;
 }
 
@@ -267,8 +271,6 @@ footer {
 
     .quote-text {
         font-size: 2rem;
-        margin: 2em 3em 0;
-        padding: 2em 2em;
     }
 
     .booking-text {
@@ -285,7 +287,7 @@ footer {
         grid-template-columns: 1fr 1fr 1fr;
         justify-content: center;
         gap: 2em;
-        padding: 1em;
+        padding-bottom: 5em;
         margin: 0 auto;
     }
 
