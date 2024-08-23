@@ -2,6 +2,11 @@
     box-sizing: border-box;
     }
 
+@font-face {
+    font-family: "Villagers";
+    src: url(/font/Villagers-Regular.ttf);
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -11,7 +16,10 @@ body {
 
 h1 {
     display: inline-block;
-    font-size: 2rem;
+    font-family: "Villagers", sans-serif;
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 0.1em;
     margin-top: 2em;
     color: whitesmoke;
     border-bottom: 2px solid #c20037;
@@ -34,6 +42,7 @@ nav {
     margin: 0 auto;
 }
 
+
 .nav-icon {
     color: white;
     margin-right: 0.5em;
@@ -43,23 +52,25 @@ nav {
     color: #c20037
 }
 
-
-.nav-list {
-    margin: 0;
-    list-style-type: none;
-    display: none;
-}
-
 .nav-socials-div {
     display: none;
 }
 
-.nav-link {
+.nav-list {
+    padding: 0 0 0 0.5em;
+    list-style-type: none;
+    display: none;
     position: relative;
-    margin-left: 0.5em;
+}
+
+.nav-link {
+    font-family: "Villagers", sans-serif;
+    position: relative;
+    letter-spacing: 0.08em;
+    margin-right: 0.5em;
     text-decoration: none;
     color: whitesmoke;
-    font-size: 1.325rem;
+    font-size: 2rem;
     text-transform: uppercase;
 }
 
@@ -198,6 +209,11 @@ header {
     border-bottom: 3px solid #c20037;
 }
 
+a .nav-icon {
+    width: 60%;
+    height: 100%;
+}
+
 .booking-text {
     font-size: 1.4rem;
     line-height: 1.5;
@@ -254,7 +270,7 @@ footer {
     }
 
     .nav-img {
-        width: 30%;
+        width: 22%;
     }
 
     .nav-list {
