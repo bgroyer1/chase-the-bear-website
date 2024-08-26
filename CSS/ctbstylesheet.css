@@ -92,8 +92,6 @@ nav {
     border-bottom: 1px solid #c20037;
 }
 
-.nav-link:active, .nav-icon:active
-
 .nav-link::before {
     content: "";
     position: absolute;
