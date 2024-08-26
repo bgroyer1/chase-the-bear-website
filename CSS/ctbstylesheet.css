@@ -60,7 +60,7 @@ nav {
     display: block;
 }
 
-.nav-icon:hover {
+.nav-icon:hover, .nav-link:hover, .nav-icon:active, .nav-list:active {
     color: #c20037
 }
 
@@ -89,7 +89,6 @@ nav {
 }
 
 .nav-link:hover {
-    color: #c20037;
     border-bottom: 1px solid #c20037;
 }
 
